@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    background-color: #918E9B;
+    max-width: 550px;
+    
+    
+}
+
+.header {
+    background-color: #F55A5A;
+    display: flex;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    gap : 0.56em;
+   
+}
+
+.header > p {
+    color: white;
+    font-size: 0.92rem;
+    font-weight: 400;
+ 
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3.125em;
+    background-color: white;
+    
+    
+   
+   
+    
+}
+
+.card--info {
+    display: flex;
+    gap : 1.25em;
+    margin-top: 1.25em;
+    padding-bottom:1.25em;
+    border-bottom: 1px solid #F5F5F5;
+    align-items: center;
+   
+    
+    
+    
+}
+
+.card--info:first-child{
+    margin-top: 0;
+}
+
+.card--info:last-child {
+  border-bottom: none;
+  margin-bottom: -2.5em;
+}
+
+
+.map {
+    display: flex;
+    align-items: center;
+    gap :0.98em;
+   
+}
+
+.map,
+.travel--info span,
+.desc{
+     font-size: 0.64rem;
+}
+
+.map p {
+    letter-spacing: 0.19em;
+    margin-left: -0.49em;
+    
+}
+
+.map a {
+    color: #918E9B;
+    text-decoration: none;
+    border-bottom: 1px solid #918E9B; 
+    
+}
+
+.card--info > .image {
+    width: 7.81em;
+    height: 10.5em;
+    border-radius: 5px;
+   
+}
+
+
+
+.travel--info > h1 {
+    font-size: 1.56rem;
+    margin-top : 0;
+}
+.travel--info span {
+    font-weight: bold;
+    
+}
+
+.desc {
+    line-height: 0.94em;
+    font-weight: 450;
+}
+
+
+
+@media (max-width:390px){
+    .card--info{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
